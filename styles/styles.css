@@ -348,11 +348,6 @@ img {
     border-bottom: 1px solid var(--header-border);
 }
 
-.filters {
-    display: flex;
-    justify-content: center;
-}
-
 .filter-btn {
     font-family: 'Roboto';
     font-style: normal;
@@ -369,8 +364,6 @@ img {
 }
 
 .filter-list {
-    display: flex;
-    justify-content: space-evenly;
     margin-bottom: 50px;
 }
 
@@ -425,9 +418,15 @@ border-radius: 4px;
     margin-bottom: 5px;
 }
 
+.filters {
+    display: flex;
+    justify-content: center;
+}
+
 /* Ends of Portfolio */
 
 .active-page {
     color: var(--accent-color);
 }
+
 
