@@ -63,15 +63,14 @@ img {
 }
 
 .section {
-    padding-top: 95px;
-    padding-bottom: 95px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 /* Шапка */
 .header {
-    /* width: 1600px; */
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .header-container {
@@ -146,6 +145,8 @@ img {
 
 .hero {
     background: var(--secondary-bgc);
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .main-title {
@@ -156,13 +157,7 @@ img {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--address-list-color);
-    padding-top: 200px;
     margin-bottom: var(--main-margin);
-}
-
-.button {
-    display: flex;
-    justify-content: center;
 }
 
 .modal-button {
@@ -178,7 +173,14 @@ img {
     border: 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    margin-bottom: 200px;
+}
+
+.button {
+    position: absolute;
+    left: 50%;
+    margin-top: 30px;
+    transform: translate(-50%, -50%);
+
 }
 
 .modal-button:hover,
@@ -188,23 +190,31 @@ img {
 
 /* Перевага */
 
-.our-advantages {
-    visibility: hidden;
+.visually-hidden {
+    height: 1px;
+    clip-path: inset(100%);
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
+
 
 .advantage-list {
     display: flex;
     flex-wrap: wrap;
     margin-left: calc(-1 * var(--main-margin));
-    margin-top: calc(-1 * var(--main-margin));
-
 }
 
 .advantage-list-item {
     width: 270px;
-    height: 98px;
     margin-left: var(--main-margin);
-    margin-top: var(--main-margin);
 }
 
 .advantage-titles {
@@ -214,6 +224,7 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-text-color);
+    margin-bottom: 10px;
 }
 
 .titles-descrpt {
@@ -262,6 +273,7 @@ img {
     flex-wrap: wrap;
     margin-left: calc(-1 * var(--main-margin));
     margin-top: calc(-1 * var(--main-margin));
+    
 }
 
 .our-team-item {
@@ -271,6 +283,10 @@ img {
     border-radius: 0px 0px 4px 4px;
     margin-left: var(--main-margin);
     margin-top: var(--main-margin);
+}
+
+.hghhg {
+    padding: 30px 61px;
 }
 
 .secondary-title {
@@ -284,7 +300,6 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
-    margin-top: var(--main-margin);
     margin-bottom: 10px;
 }
 
@@ -294,8 +309,6 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
-    margin-bottom: var(--main-margin);
-
 }
 
 /* Footer */
@@ -335,14 +348,9 @@ img {
     border-bottom: 1px solid var(--header-border);
 }
 
-/* .our-projects {
-    visibility: hidden;
-} */
-
 .filters {
     display: flex;
     justify-content: center;
-    margin-top: 95px;
 }
 
 .filter-btn {
@@ -363,7 +371,7 @@ img {
 .filter-list {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 35px;
+    margin-bottom: 50px;
 }
 
 
@@ -399,16 +407,11 @@ border-radius: 4px;
 .projects-list {
     display: flex;
     flex-wrap: wrap;
-    margin-left:calc(-1 * var(--card-set-gap));
-    margin-top: calc(-1 * var(--card-set-gap));
-    margin-bottom: 95px;
+    gap: 30px;
 }
 
 .projects-item {
     flex-basis:calc(100% / 3 - var(--card-set-gap));
-    margin-left: var(--card-set-gap);
-    margin-top: var(--card-set-gap);
-    margin-bottom: var(--main-margin);
 }
 
 .box-content {
